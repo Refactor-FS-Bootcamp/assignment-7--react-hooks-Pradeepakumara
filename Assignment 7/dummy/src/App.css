@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header -------------------------*/
+.header{
+  background-color: azure;
+  padding: 20px;
+}
+
+.head-container{
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.head-container h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2.8rem;
+  padding: 20px;
+  color: orangered;
+}
+
+.head-container button{
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+  background: transparent;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: orangered;
+  border: 2px solid orangered;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+.head-container button:hover{
+  background-color: orangered;
+  border: 2px solid orangered;
+  color: white;
+}
+
+.head-container p{
+  font-size: 1.2rem;
+  color: grey;
+  padding: 20px;
+}
+
+
+/* API Section */
+.Api-section{
+  padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5));
+}
+
+.Api-container{
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 90vw;
+  /* width: 200px; */
+}
+
+.Api-item{
+  margin: 20px 15px;
+  text-align: center;
+  background-color: azure;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(50, 18, 18);
+  
+}
+
+.Api-item img{
+  width: 90%;
+  height: 300px;
+  /* border-radius: 10px 10px 0 0; */
+  padding-top: 10px;
+}
+
+.Api-item h1{
+  padding: 10px;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: orangered;
+}
+
+.Api-item h3{
+  font-family: cursive;
+  color: chartreuse;
+}
+
+.Api-item p{
+  padding: 10px 5px;
+  color: gray;
+}
+.Api-item h4{
+  font-family: sans-serif;
+  text-transform: capitalize;
+  padding: 10px 0 20px;
+  color: coral;
+}
+
+@media screen and (min-width: 795px) {
+  .Api-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  .Api-container{
+      width: 93vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+}
+
+@media screen and (min-width: 1525px) {
+  .Api-container{
+      width: 96vw;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
+
